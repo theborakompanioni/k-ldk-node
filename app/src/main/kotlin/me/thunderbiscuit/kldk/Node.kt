@@ -5,6 +5,7 @@ import me.thunderbiscuit.kldk.utils.Config
 import me.thunderbiscuit.kldk.utils.toByteArray
 import me.thunderbiscuit.kldk.utils.toHex
 import org.bitcoindevkit.DescriptorSecretKey
+import org.bitcoindevkit.Mnemonic
 import org.ldk.batteries.ChannelManagerConstructor
 import org.ldk.batteries.NioPeerHandler
 import org.ldk.enums.Network
@@ -153,7 +154,7 @@ object Node {
     private fun getStartingEntropy(mnemonic: String): ByteArray {
          val entropy: ByteArray = DescriptorSecretKey(
              network = org.bitcoindevkit.Network.TESTNET,
-             mnemonic = mnemonic,
+             mnemonic = Mnemonic.fromString(mnemonic),
              password = null,
         ).secretBytes().toUByteArray().toByteArray()
 

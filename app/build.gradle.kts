@@ -32,7 +32,7 @@ dependencies {
     implementation("org.lightningdevkit:ldk-java:0.0.111.0")
 
     // bitcoindevkit
-    implementation("org.bitcoindevkit:bdk-jvm:0.10.0")
+    implementation("org.bitcoindevkit:bdk-jvm:0.30.0")
 
     testImplementation(kotlin("test"))
 }

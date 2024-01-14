@@ -18,7 +18,6 @@ import com.github.ajalt.mordant.table.table
 import com.github.ajalt.mordant.terminal.Terminal
 import me.thunderbiscuit.kldk.network.*
 import me.thunderbiscuit.kldk.utils.getNodeId
-import java.io.File
 
 fun main() {
     println(green("Kldk starting..."))
